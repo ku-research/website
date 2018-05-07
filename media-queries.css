@@ -1,0 +1,355 @@
+/* WARNING: USE CAUTION WHEN EDITING THIS FILE */
+
+/* NOTE: THIS FILE INCLUDES 3 STAGES OF MEDIA QUERIES - SEE help.html */
+
+/* NOTE: TO EDIT COLORS - SEE style.css */
+
+
+
+
+
+
+/***************
+START Media Queries #1 WHEN PAGE WIDTH LESS THAN 890 IS ACTIVE (FOR TABLET)
+***************/
+@media handheld and (max-width: 890px),
+   screen and (max-device-width: 890px),
+   screen and (max-width: 890px) 
+	{
+
+
+.logo-respond	 { width: 100%; height: auto; }
+
+#contentbox	 { max-width: 720px; }
+
+#left-content 	 { max-width: 435px; }
+
+#sidebar-content { max-width: 250px; }
+
+.floatlist	 { width: 100%; }
+
+#contentbox-home	{ padding-top: 0px; }
+
+.ss-header		{ display: none; }
+
+.ss-header-mobile	{ display: block; }
+
+/* HOME */
+
+.content-pad-home	{ max-width: 670px; }
+
+.page-splits-home 	{ max-width: 670px; }
+
+/* HOME 3 BOX COLUMNS */
+
+.introbox-outer	{ width: 690px; margin: 0 auto; }
+
+.introbox	{
+		width: 230px;  /* DIVIDED BY 3 */
+		}
+
+.introbox-inner	{
+		padding: 0px 10px 10px 10px;
+		margin: 0px 0px 5px 0px;
+		}
+
+/* HOME IMAGES */
+
+.imagesbox		{ width: 210px; }
+
+.introimages img	{ width: 210px; }
+
+
+/* HOME 2 BOX COLUMNS */
+
+.introbox2-outer	{ width: 690px; margin: 0 auto; }
+
+.introbox2	{
+		width: 345px;  /* DIVIDED BY 2 */
+		}
+
+.introbox2-inner	{
+		padding: 5px 6px 5px 6px;
+		margin: 8px 8px 8px 8px;
+		}
+
+.introbox2-left		{ margin-left: 10px; }
+
+.introbox2-right	{ margin-right: 10px; }
+
+
+	}
+/***************
+END Media Queries #1
+***************/
+
+
+
+
+
+
+/***************
+START Media Queries #2 WHEN PAGE WIDTH LESS THAN 740 IS ACTIVE
+***************/
+@media handheld and (max-width: 740px),
+   screen and (max-device-width: 740px),
+   screen and (max-width: 740px) 
+	{
+
+
+.subtitle  		{ font-size: 16px; }
+
+#left-content 		{ width: 100%; min-width: 100%; }
+
+#sidebar-content	{ display: none; border-left: #999999 0px solid; }
+
+.footerhide		{ display: none; }
+
+.mobile-social		{ display: block; padding: 10px 0px 10px 0px; }
+
+.mobile-social table	{ margin: 0 auto; }
+
+.contact-page #sidebar-content	{ display: block; }
+
+.contact-page .content-pad	{ display: none; }
+
+.rslides_container	{ margin: 0px auto 10px auto; }
+
+/* HOME */
+
+.content-pad-home	{ max-width: 442px; padding: 10px 5px 10px 5px; }
+
+.page-splits-home 	{ max-width: 442px; margin: 2px auto 2px auto; }
+
+
+/* HOME 3 BOX COLUMNS */
+
+.introbox-outer	{ width: 450px; margin: 0 auto; }
+
+.introbox	{
+		float: left;
+		width: 150px;  /* DIVIDED BY 3 */
+		}
+
+.introbox-inner	{
+		padding: 10px 5px 10px 5px;
+		margin: 0px 0px 0px 0px;
+		}
+
+/* HOME IMAGES */
+
+.imagesbox		{ width: 140px; }
+
+.introimages img	{ width: 140px; }
+
+
+/* HOME 2 BOX COLUMNS */
+
+.introbox2-outer	{ width: 450px; margin: 0 auto; }
+
+.introbox2	{
+		width: 225px;  /* DIVIDED BY 2 */
+		}
+
+.introbox2-inner	{
+		padding: 10px 5px 10px 5px;
+		margin: 10px 5px 10px 5px;
+		}
+
+.introbox2-left		{ margin-left: 4px; }
+
+.introbox2-right	{ margin-right: 4px; }
+
+
+	}
+/***************
+END Media Queries #2
+***************/
+
+
+
+
+
+
+/***************
+START Media Queries #3 -  WHEN PAGE WIDTH LESS THAN 482 IS ACTIVE
+                      CLASSES HERE CAN ALSO BE FOUND IN THE style.css
+***************/
+@media handheld and (max-width: 482px),
+   screen and (max-device-width: 482px),
+   screen and (max-width: 482px) 
+	{
+
+
+
+
+/* MQS FONTS - NEXT LINE IS DEFAULT MOBILE FONT ALL PAGES */
+
+body, div, table { font-size: 14px; line-height: normal; }
+
+.title  	{ font-size: 19px; }
+
+.subtitle  	{ font-size: 15px; }
+
+.smalltext 	{ font-size: 12px; }
+
+.home-caption	{ font-size: 12px; }
+
+.just 		{ text-align: left; }
+
+
+
+
+/* MQS GENERAL */
+
+.large-splits 	{ height: 15px; }
+
+.hidemobile	{ display: none; }
+
+.splits-xtramargin { margin-top: 12px; margin-bottom: 12px; }
+
+
+
+
+/* MQS PAGE & CONTENT HEIGHTS, PADDING & WIDTHS */
+
+.pageheight		{ min-height: 50px; }
+
+.pagebox		{ padding: 0px 0px 0px 0px; }
+
+#contentbox		{ padding: 10px 0px 10px 0px; }
+
+.content-pad		{ padding: 10px 5px 10px 5px; }
+
+.content-pad-nosb 	{ padding: 10px 5px 10px 5px; }
+
+#contentbox-home	{ padding: 0px 0px 10px 0px; }
+
+.content-pad-home	{ padding: 10px 5px 10px 5px; }
+
+
+
+
+/* MQS LOGO GRAPHIC, AND TEXT */
+
+#headerdiv	{ padding: 8px 0px 8px 0px; }
+
+.textlogo	{ font-size: 18px; }
+
+
+
+
+/* HOME */
+
+.page-splits-home 	{ max-width: 98%; }
+
+
+/* HOME 3 BOX COLUMNS */
+
+.introbox-outer	  { width: 280px; margin: 0 auto; }
+
+.introbox	  { width: 280px; float: none; margin: 0 auto; }
+
+.introbox-inner	  { margin: 10px 0px 10px 0px; }
+
+.introbox-left	  { display: block; }
+
+.introbox-center  { display: block; }
+
+.introbox-right	  { display: block; }
+
+.imagesbox	  { width: 238px; height: 100px; }
+
+.introimages img  { width: 238px; height: 100px; }
+
+
+/* HOME 2 BOX COLUMNS */
+
+.introbox2-outer	{ width: auto; margin: 0 auto; }
+
+.introbox2	{ width: auto; float: none; margin: 0 auto; }
+
+.introbox2-inner	{
+		font-size: 12px;
+		padding: 5px 12px 5px 12px;
+		margin: 8px 10px 8px 10px;
+		}
+
+
+
+
+/* MQS FOOTER */
+
+.footer-copyright { font-size: 11px; }
+
+
+
+
+/* MQS SIDEBAR */
+
+.sidebar-text	{ font-size: 13px; line-height: normal; }
+
+.side-links a	{ font-size: 13px; line-height: normal; }
+
+.sidebar-pad	{ padding: 0px 0px 15px 0px; }
+
+
+
+
+/* MQS HOME JQUERY SLIDESHOW & SLIDESHOW SETS */
+
+.rslides_container	{
+			border-width: 0px;
+  		/* CORNER ROUNDING */
+			-moz-border-radius: 0px;
+			-webkit-border-radius: 0px;
+			-khtml-border-radius: 0px;
+			border-radius: 0px;
+			}
+
+#homeJQ > .centered-btns_nav	{ display: block; }
+
+.centered-btns_tabs	{ display: none; }
+
+
+
+
+/* CONTACT PAGE */
+
+.form-box			  { margin: 10px 0px 10px 0px; }
+
+.shadeform, .textarea, .dropdown  { font-size: 12px; }
+
+
+
+
+/* STAFF PAGE */
+
+.staff-email	{ font-size: 12px; }
+
+
+
+
+/* LINKS PAGE */
+
+.searchform, .searchbutton  { font-size: 12px; }
+
+
+
+
+/* PAYMENTS PAGE */
+
+.payform, input[type=submit].payform	{ width: 140px; }
+
+.paypalbadge { width: 80px; }
+
+
+
+
+	}
+/***************
+END Media Queries #3
+***************/
+
+
+

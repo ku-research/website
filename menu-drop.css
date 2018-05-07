@@ -1,0 +1,475 @@
+/* HORIZONTAL RESPONSIVE DROP MENUS V1.11 2017 */
+
+
+
+
+/* FULL - MENU OUTER WIDTHS, BORDER & BACKGROUND COLOR */
+
+#rwdmenu	{
+		margin: 0 auto;
+		padding: 0;
+		position: relative;
+		z-index: 1100;
+		min-width: 600px;	/* INCREASE TO STOP DESKTOP MENUS WRAPPING */
+		text-align: center;	/* CENTERS MENU */
+		background-color: #5C6A78;
+		border-top: 0px solid #999999;
+		vertical-align: bottom;
+	/* CORNER ROUNDING */
+		-moz-border-radius: 0px;
+		-webkit-border-radius: 0px;
+		-khtml-border-radius: 0px;
+		border-radius: 0px;
+		}
+
+
+
+
+/* MENU DEFAULTS & FONT FACE (ALL LEVELS) */
+
+#rwdmenu ul, #rwdmenu li, #rwdmenu a 
+		{
+		margin: 0 auto;
+		padding: 0;
+		border: 0;
+		outline: none;
+		list-style: none;
+	/* USES GOOGLE FONT LOADED IN THE style.css */
+		font-family: "Questrial", sans-serif;
+		font-weight: 400;
+		line-height: normal;
+		text-decoration: none;
+		text-align: left;
+		vertical-align: bottom;
+		position: relative;
+		z-index: 1101;
+		}
+
+#rwdmenu ul	{
+		text-align: center;
+		margin: 0 auto;
+		display: inline-block;
+		zoom: 1;
+		*display: inline;
+		}
+
+
+
+
+/* FULL - TOP LEVEL BUTTON AREA */
+
+#rwdmenu > ul	{
+		background: transparent;
+		border: solid #999999;
+		border-width: 0px 0px 0px 0px;
+		/* NOTE: BORDERS ABOVE ARE | top | right | bottom | left */
+		}
+
+
+
+
+/* FULL - LEFT / RIGHT BORDER EACH BUTTON */
+
+#rwdmenu > ul > li 
+		{
+		background-image: none;
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		float: left;
+		border: solid #999999;
+		border-width: 0px 0px 0px 0px;
+		/* NOTE: BORDERS ABOVE ARE | top | right | bottom | left */
+		}
+
+/* FULL - BORDER LAST BUTTON */
+
+#rwdmenu > ul > li:last-child { border-width: 0px 0px 0px 0px; }
+
+
+
+
+/* FULL & MOBILE - TOP LEVEL HOVER BACKGROUND */
+
+#rwdmenu > ul > li:hover 
+		{
+		background: #0081F7;
+		background-image: url("picts/menu-arrow-white.png");
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		}
+
+
+
+
+/* FULL & MOBILE - NO ARROW ON NON-DROP MENU ADD CLASS .nodrop IN menu.js */
+
+#rwdmenu > ul > li.nodrop, #rwdmenu > ul > li.nodrop:hover, #rwdmenu > ul > li.nodrop.active 
+		{
+		background-image: none;
+		}
+
+
+
+
+/* FULL & MOBILE - TOP LEVEL FONT COLOR & HEIGHT & PADDING (WIDTH & ALIGNMENT DESKTOP) */
+
+#rwdmenu > ul > li > a 	{
+			color: #FFFFFF;
+			font-size: 17px;
+			font-weight: normal;
+			text-align: center;
+			text-indent: 0px;
+			width: auto;  /* FULL BUTTON WIDTH */
+			line-height: 40px; /* DEFINES TOP LEVEL MENU HEIGHT (ALSO EDIT top: 43px; BELOW) */
+			margin: 0px 0px 0px 0px;
+			padding: 0px 15px 3px 15px;
+			display: block;
+			}
+
+/* FULL & MOBILE - TOP LEVEL HOVER FONT COLOR */
+
+#rwdmenu > ul > li > a:hover 	{
+				color: #FFFFFF;
+				text-decoration: none;
+				}
+
+
+
+
+/* FULL & MOBILE - ACTIVE BACKGROUND */
+
+#rwdmenu > ul > li.active 	{
+				background: #7F8C9B;
+				background-image: url("picts/menu-arrow-white.png");
+				background-repeat: no-repeat;
+				background-position: center bottom;
+				border-bottom: none;
+				}
+
+#rwdmenu > ul > li.active > a 	{ color: #FFFFFF; }
+
+
+
+
+/* FULL & MOBILE - SUB MENU BACKGROUND COLOR, BORDER & OUTER PADDING */
+/* (TOP LOCATION WORKS WITH TOP LEVEL line-height: ABOVE) */
+
+#rwdmenu ul ul 	{
+		background: #7F8C9B;
+		border: #5C6A78 1px solid;
+		border-width: 0px 1px 1px 1px;
+		/* NOTE: BORDERs ABOVE ARE | top | right | bottom | left */
+	/* CORNER ROUNDING - BOTTOM CORNERS */
+		-moz-border-radius-topleft: 0px;
+		-moz-border-radius-topright: 0px;
+		-moz-border-radius-bottomright: 3px;
+		-moz-border-radius-bottomleft: 3px;
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 3px;
+		border-bottom-left-radius: 3px;
+	/* DROP SHADOW */
+		-moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.20);
+		-webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.20);
+		box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.20);
+		padding: 0px 0px 0px 0px;
+		display: none;
+		position: absolute;
+		top: 43px;
+		left: 0px;
+		z-index: 1102;
+		}
+
+
+
+
+/* FULL - SUB MENU WIDTH */
+
+#rwdmenu ul ul { width: 220px; }
+
+
+
+
+/* FULL & MOBILE - SUB MENU LINK COLORs & FONT & INNER PADDING & BORDER */
+
+#rwdmenu ul ul a	{
+			color: #FFFFFF;
+			font-size: 15px;
+			font-weight: 400;
+			line-height: normal;
+			background: transparent;
+			display: block;
+			padding: 10px 5px 10px 5px;
+			border: solid #999999;
+			border-width: 0px 0px 0px 0px;
+			/* NOTE: BORDERS ABOVE ARE | top | right | bottom | left */
+			}
+
+/* FULL - SUB MENU HOVER COLORS */
+
+#rwdmenu ul ul a:hover	{
+			color: #FFFFFF;
+			background: #0081F7;
+			border: solid #999999;
+			border-width: 0px 0px 0px 0px;
+			/* NOTE: BORDERS ABOVE ARE | top | right | bottom | left */
+			}
+
+
+
+
+/* FULL & MOBILE - PADDING BETWEEN SUB MENUS & SUB UPPERMOST + BOTTOM PAD */
+
+#rwdmenu ul ul li { padding: 0px 0px 0px 0px; }
+
+#rwdmenu ul ul li:first-child { padding: 0px 0px 0px 0px; }
+
+#rwdmenu ul ul li:last-child { padding: 0px 0px 0px 0px; }
+
+
+
+
+/* DEFAULT CLEAR FLOATS - DO NOT EDIT! */
+
+  #rwdmenu > ul:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+
+
+
+
+/* HIDES MOBILE MENU - DO NOT EDIT! */
+
+  #rwdmenu > ul > li.mobile {
+    display: none;
+    border-right: 0 none;
+  }
+
+
+
+
+/* OPTIONAL LAST DROP MENU OPEN TO LEFT - UN-REMARK TO USE */
+
+/* **** START REMARK OUT
+
+#rwdmenu > ul > li:last-child ul {
+  left: auto;
+  right: 0;
+}
+
+END REMARK OUT **** */
+
+
+
+
+/***************
+START Media Queries #1-m FOR MENU L R PADDING - 890
+***************/
+@media handheld and (max-width: 890px),
+   screen and (max-device-width: 890px),
+   screen and (max-width: 890px) 
+	{
+
+
+/* TOP LEVEL MENU L R PADDING */
+
+#rwdmenu > ul > li > a 	{ padding-left: 10px; padding-right: 10px; }
+
+
+	}
+/***************
+END Media Queries #1-m
+***************/
+
+
+
+
+/* START MOBILE ONLY SECTION */
+
+/***************
+START Media Queries #2-m - FOR THE MOBILE MENU - 640 IS THE WIDTH WHEN THE MOBILE MENU APPEARS
+***************/
+@media handheld and (max-width: 640px),
+   screen and (max-device-width: 640px),
+   screen and (max-width: 640px) 
+	{
+
+
+
+
+#rwdmenu	{
+		min-width: 200px;
+		border-width: 0px 0px 0px 0px;
+		}
+
+#rwdmenu ul 	{ display: block; width: 100%; }
+
+
+
+
+/* MOBILE - FIRST "Menu" TEXT & ICON FONT (edit text in "javascripts.js") */
+
+#rwdmenu > ul > li.mobile > a 
+		{
+		color: #FFFFFF;
+		font-size: 15px;
+		font-weight: normal;
+		text-indent: 2px;
+		line-height: 25px; /* DEFINES HEIGHT FOR ICON */
+		padding: 5px 6px 7px 6px;
+		}
+
+#rwdmenu > ul > li.mobile:hover, #rwdmenu > ul > li.mobile.active  
+		{
+	/* CORNER ROUNDING FIRST "Menu" */
+		-moz-border-radius: 0px;
+		-webkit-border-radius: 0px;
+		-khtml-border-radius: 0px;
+		border-radius: 0px;
+		}
+
+
+
+
+/* MOBILE - FIRST "Menu" ARROW LOCATION */
+
+#rwdmenu > ul > li.mobile, #rwdmenu > ul > li.mobile:hover, #rwdmenu > ul > li.mobile.active 
+		{
+		background-image: none;
+		background-position: center bottom;
+		}
+
+
+
+
+/* MOBILE RIGHT ICON */
+
+  #rwdmenu > ul > li.mobile i 
+		{
+		width: 30px;
+		float: right;
+		font-style: normal;
+		background-image: url("picts/mobile-menu-icon.png");
+		background-repeat: no-repeat;
+		background-position: left top;
+		}
+
+
+
+
+/* MOBILE - 2nd LEVEL FONT SIZE, COLOR & PADDING  (WIDTH & ALIGNMENT MOBILE) */
+
+#rwdmenu > ul > li > a	{
+			font-size: 14px;
+			font-weight: normal;
+			text-indent: 25px;
+			text-align: left;
+			line-height: 18px; /* DEFINES HEIGHT */
+			width: auto;
+			padding: 6px 6px 5px 6px;
+			}
+
+
+
+
+/* MOBILE - MENU HEIGHT & ANIMATION SPEED */
+
+/* HEIGHT WORKS WITH "FIRST Menu" ABOVE USING line-height & padding */
+
+#rwdmenu > ul	{
+		max-height: 37px;
+		overflow: hidden;
+		-webkit-transition: max-height 0.5s;
+		transition: max-height 0.5s ease;
+		}
+
+
+
+
+/* MOBILE - DEFAULT OVERALL MAXIMUM HEIGHT */
+
+#rwdmenu.expand ul { max-height: 900px; }
+
+
+
+
+/* MOBILE - 3rd LEVEL FONT SIZE & PADDING & INDENT */
+
+#rwdmenu ul ul a	{
+			font-size: 13px;
+			font-weight: normal;
+			line-height: normal;
+			text-indent: 25px;
+			padding: 7px 5px 7px 9px;
+			}
+
+
+
+
+/* MOBILE - BUTTON BORDERS & ARROW POSITION */
+
+#rwdmenu > ul > li	{
+			border: solid #999999;
+			border-width: 0px 0px 0px 0px;
+			/* NOTE: BORDERS ABOVE ARE | top | right | bottom | left */
+			}
+
+#rwdmenu > ul > li:first-child	{ border-width: 0px 0px 0px 0px; }
+
+#rwdmenu > ul > li:last-child	{ border-width: 0px 0px 0px 0px; }
+
+#rwdmenu > ul > li > ul 	{ border-width: 0px 0px 0px 0px; }
+
+#rwdmenu > ul > li 
+			{
+			background-image: url("picts/menu-arrow-white-60.png");
+			background-position: 10px 12px;
+			}
+
+#rwdmenu > ul > li:hover, #rwdmenu > ul > li.active 
+			{
+			background-color: #495765;
+			background-image: url("picts/menu-arrow-white.png");
+			background-position: 10px 12px;
+			}
+
+
+
+
+/* MOBILE - DEFAULTS - DO NOT EDIT! */
+
+  #rwdmenu > ul > li {
+    border-right: 0 none;
+    border-left: 0 none;
+    display: block;
+    float: none;
+  }
+
+  #rwdmenu > ul > li.mobile {
+    display: block;
+  }
+
+  #rwdmenu ul ul {
+    width: 100%;
+    position: relative;
+    top: 0;
+/* REMOVE DROP SHADOW */
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+/* REMOVE BORDER */
+    border-width: 0px;
+  }
+
+
+
+
+	}
+/***************
+END Media Queries #2-m
+***************/
+
+
+

@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<!-- EDIT THE NEXT THREE LINES -->
+
+<title>Website Template</title>
+<meta name="Description" content="Place your website description in this area. This is read by some search engines.">
+<meta name="KeyWords" content="add, your, keywords and phrases in this area, separated, by, commas, this, is read by only a, few search, engines">
+
+<!-- EDIT THE ABOVE THREE LINES -->
+
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Cache-Control" content="max-age=1200">
+
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="stylesheet" href="menu-drop.css" type="text/css">
+<link rel="stylesheet" href="media-queries.css" type="text/css">
+
+
+
+<!-- START GOOGLE MAP CODE-->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+<script type="text/javascript">
+function initialize() {
+  var myLatlng = new google.maps.LatLng(41.8369, -87.6847);
+  var mapOptions = {
+    zoom: 10,
+    center: myLatlng
+  }
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Location Map'
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<!-- END GOOGLE MAP CODE-->
+
+
+<script type="text/javascript" src="JQuery/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="javascripts.js"></script>
+
+</head>
+
+<body class="outer-background">
+
+
+<!-- START PAGE WRAPPER -->
+<div class="pagewrapper">
+<div class="pagebox">
+
+
+<!-- HEADER -->
+<script type="text/javascript" src="header.js"></script>
+
+
+<!-- MENU -->
+<script type="text/javascript" src="menu.js"></script>
+
+
+<!-- START CONTENT OUTER -->
+<div id="contentbox" class="inner-background pageheight">
+
+
+<!-- START MAIN CONTENT LEFT -->
+<div id="left-content">
+
+
+<!-- START CONTENT TEXT -->
+<div class="content-pad td-left">
+
+
+
+
+
+
+
+<!-- PARAGRAPH 1 -->
+
+<div class="td-left">
+
+<h1 class="title">Contact KU Research</h1>
+
+</div>
+
+We welcome all inquires.<br>
+
+<div class="page-splits">&nbsp;<br></div>
+
+<!-- END PARAGRAPH 1 -->
+
+
+
+
+
+<div class="no-formmargin">
+
+<script type="text/javascript" src="contact.js"></script>
+
+</div>
+
+<div class="page-splits">&nbsp;<br></div>
+
+
+<br>
+
+
+<!-- GOOGLE MAP DISPLAY CODE -->
+<div id="map-canvas"></div>
+
+
+
+<!-- GOOGLE GET DIRECIONS FORM -->
+<div class="directions">
+<form action="https://www.google.com/maps/" method="get" target="_blank" class="formmargin">
+<label for="saddr">Enter your location</label><br>
+<input type="text" name="saddr" class="shadeform"><br>
+<input type="hidden" name="daddr" value="Chicago, Illinois 60622">
+<input type="submit" value="Get Directions" class="submitbutton directionbutton">
+</form>
+</div>
+
+
+
+<br><br><br>
+
+</div>
+<!-- END CONTENT TEXT -->
+
+
+</div>
+<!-- END MAIN CONTENT LEFT -->
+
+
+<!-- START SIDEBAR CONTENT RIGHT -->
+<div id="sidebar-content" class="SB-width SB-background">
+
+
+<!-- START SIDEBAR CONTENT TEXT -->
+<div class="sidebar-pad td-center sidebar-text">
+
+
+
+
+
+
+<img src="picts/contact.jpg" width="225" height="125" class="sidebar-image" alt="image">
+
+
+<!-- START IMAGE NOTES & CAPTION -->
+
+<div class="sidebar-textarea sidebar-text">
+
+<div class="sidebar-title">
+
+Contact Us<br>
+
+</div>
+
+
+
+Please make contact by completeing the online form<br>
+
+<div class="side-links">
+
+<a href="privacy.htm">See Our Privacy Policy</a></div>
+
+
+
+
+
+
+
+</div>
+
+<!-- END IMAGE NOTES & CAPTION -->
+
+
+
+<br>
+
+</div>
+<!-- END SIDEBAR CONTENT TEXT -->
+
+</div>
+<!-- END SIDEBAR CONTENT RIGHT -->
+
+
+<!-- CLEAR CONTENT FLOATS -->
+<div class="divclear">&nbsp;<br></div>
+
+
+</div>
+<!-- END CONTENT OUTER -->
+
+
+</div>
+<!-- END PAGE HEIGHT & PAGEBOX -->
+
+
+
+
+
+
+<!-- SOCIAL LINKS ON MOBILE -->
+
+<div class="mobile-social">
+<script type="text/javascript" src="social-links.js"></script>
+</div>
+
+
+
+
+
+
+<!-- START FOOTER -->
+
+<!-- FOOTER SPLIT -->
+<div class="footer-splits">
+&nbsp;<br>
+</div>
+
+<div class="footer-border footerhide printhide">
+
+<iframe id="FooterFRM" src="footer.htm" width="100%" height="250" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" class="footer-frame footer-height"></iframe>
+
+</div>
+
+<script type="text/javascript" src="footer-copyright.js"></script>
+
+<!-- END FOOTER -->
+
+
+
+
+
+
+</div>
+<!-- END PAGE WRAPPER -->
+
+
+</body>
+</html>
